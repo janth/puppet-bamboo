@@ -75,3 +75,8 @@ echo ""
 #if [ "$BAMBOO_HOME_MINUSD" != "" ]; then
 #    echo "Using BAMBOO_HOME:       $BAMBOO_HOME"
 #fi
+
+# JanTh: for sclo git2 @ code.sintef
+source   /opt/rh/sclo-git25/enable
+env | sort > /tmp/bamboo-env
+set | sort > tmp/bamboo-set
